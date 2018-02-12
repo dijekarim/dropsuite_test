@@ -1,0 +1,32 @@
+{
+  "name": "dropsuite_test",
+  "version": "1.0.0",
+  "description": "1. Clone this repo : ```bash $ git clone https://github.com/dijekarim/dropsuite_test.git ```",
+  "devDependencies": {
+    "cz-conventional-changelog": "^1.2.0",
+    "standard-version": "^4.0.0"
+  },
+  "scripts": {
+    "start": "bundle exec rackup --host 0.0.0.0",
+    "release": "standard-version --release-as patch",
+    "minor-release": "standard-version --release-as minor",
+    "major-release": "standard-version --release-as major",
+    "first-release": "standard-version --first-release",
+    "beta-release": "standard-version --prerelease beta"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dijekarim/dropsuite_test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dijekarim/dropsuite_test/issues"
+  },
+  "homepage": "https://github.com/dijekarim/dropsuite_test#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
